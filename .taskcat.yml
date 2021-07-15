@@ -1,15 +1,15 @@
-global:
+project:
   owner: dsensiba@amazon.com
-  qsname: test-project
+  name: test-project
+  package_lambda: false
   regions:
     - us-east-1
     - us-east-2
     - us-west-1
     - us-west-2
-  reporting: true
+  s3_bucket: ""
 tests:
   test-scenario1:
-    parameter_input: input.json
-    template_file: master.template
+    template: master.template
     regions:
       - us-east-1
